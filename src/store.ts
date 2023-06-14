@@ -11,7 +11,7 @@ export const useMyStore = defineStore("myStore", {
     },
   },
   persist: {
-    storage: localStorage,
+    storage: sessionStorage, //you can also set to "sessionStorage" instead of to "localStorage"
     paths: ["count"],
   },
 });
